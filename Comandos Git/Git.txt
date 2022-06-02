@@ -1,0 +1,35 @@
+- git clone <caminho_do_arquivo> -> clonar repositorio remoto ja existente
+
+- git init -> cria/inicia repositorio 
+
+- git status -> verifica estado dos arquivos/diretorios
+
+- git add nome_arquivo.extensao -> adiciona arquivo especifico
+- git add nome_diretorio -> adiciona diretorio especifico
+- git add . -> adiciona todos os arquivos/diretorios
+- git add -f nome_arquivo.extensao -> adiciona arquivo que esta listado no git ignore
+
+- git commit nome_arquivo.extensao -> comitar arquivo
+- git commit nome_arquivo.extensao -m "mensagem de commit" -> comitar informando o que foi realizado no arquivo
+
+- git rm nome_arquivo.extensao -> remover arquivo
+- git rm -r nome_diretorio -> remover diretorio
+
+- git log -> exibir historico
+- git log -p -2 -> exibir historico com diff das duas ultimas alteracoes
+- git log --stat -> exibir resumo do historico (hash completa, autor, data, comentário e qtde de alterações (+/-))
+- git log -- <caminho_do_arquivo> -> exibir histório de um arquivo específico
+
+- git push -u origin master -> primeiro push de um repositório deve conter o nome do repositório remoto e o branch
+- git push -> demais pushes
+
+- git pull -> atualizar repositorio na branch atual
+- git fetch -> buscar as alteracoes, mas nao aplica-las no branch atual
+
+- git branch nome_branch -> criar uma nova branch
+- git branch -> listar branches existentes
+- git checkout nome_branch -> trocar de branch
+- git checkout -b nome_branch -> criar e trocar de branch
+- git checkout master/main -> voltar a branch principal
+
+- git merge nome_branch -> merge entre branches - é necessário estar no branch que deverá receber as alterações
